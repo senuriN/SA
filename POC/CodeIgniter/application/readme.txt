@@ -20,7 +20,13 @@
         within the relevant folder(eg:js) and place your files there.
         (I've provided an example inside the css folder. Please refer to that)
         
-  - Try to 
+  - In the js folder under assets, there are two sub folders such as 
+      ~ customScripts - Place any JS scripts that you have written here
+      ~ helperScripts - Any referenced or externally available js scripts (eg: jquery.min.js) will go here.
+      
+      Create folders with your name and then place the scripts in these two subfolders as well
+      (Eg: CodeIgniter/application/assets/js/helperScripts/taro(Your folder)/jquery.min.js(your file)
+      
       
       
       
