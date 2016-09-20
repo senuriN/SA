@@ -19,11 +19,6 @@ A system to automate and manage the Student Internship Program
     - You can auto generate this html code by interactively creating the forms at the following site
           - http://bootsnipp.com/forms
           
-    - Follow the below mentioned format for each form element by placing it in divisions that inherit bootstrap css styles
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="userName">Username</label>
-            <div class="col-md-4">
-                <input id="userName" name="userName" placeholder="Enter username/email" class="form-control input-md" required="" type="text">
-            </div>
-        </div>
+    - Follow the same generated format for each form element by placing it in divisions that inherit bootstrap css styles
+        
     
