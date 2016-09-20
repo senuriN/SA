@@ -4,7 +4,7 @@
 
 function displayHomePage()
 {
-    document.getElementById('targetMain').src = "http://www.w3schools.com";
+    document.getElementById('targetMain').src = "login/login.html";
 }
 
 function displayRegistrationPage()
