@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="../assets/js/helperScripts/taro/angular.min.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/js/helperScripts/taro/angular-sanitize.min.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/js/helperScripts/taro/tv4.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/js/helperScripts/taro/ObjectPath.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/js/helperScripts/taro/schema-form.min.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/js/helperScripts/taro/bootstrap-decorator.min.js"></script>-->
+    <!--<script type="text/javascript" src="../assets/js/helperScripts/taro/jquery-1.10.2.js"></script>-->
+
+</head>
+<body>
+
+<form class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Login</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="userName">Username</label>
+            <div class="col-md-4">
+                <input id="userName" name="userName" placeholder="Enter username/email" class="form-control input-md" required="" type="text">
+
+            </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="pwd">Password </label>
+            <div class="col-md-4">
+                <input id="pwd" name="pwd" placeholder="Enter Password" class="form-control input-md" required="" type="password">
+
+            </div>
+        </div>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="loginBtn"></label>
+            <div class="col-md-8">
+                <button id="loginBtn" name="loginBtn" class="btn btn-default">Login</button>
+                <button id="registerBtn" name="registerBtn" class="btn btn-info">Register</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+<!--<div ng-controller="../controllers/formController">-->
+<!--<form sf-schema="schema" sf-form="form" sf-model="model"></form>-->
+<!--</div>-->
+</body>
+</html>
