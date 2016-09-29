@@ -1,14 +1,16 @@
-/**
- * Created by nayantara on 9/29/16.
- */
-
 $( function() {
     $( "#datepicker" ).datepicker();
 
 } );
 
 function showPromtBox() {
-    document.getElementById('dialog').style.display= 'block' ;
+    var choice=document.getElementById("reason");
+    var selectedReason = choice.options[choice.selectedIndex].text;
+
+    if(selectedReason=="Other")
+    {
+        // prompt("Please enter a Reason for cancellation", "");
+        document.getElementById('dialog').style.display= 'block' ;
         $( function() {
 
             $( function() {
@@ -30,7 +32,7 @@ function showPromtBox() {
             } );
             $( "#dialog" ).dialog();
         } );
-
+    }
 }
 
 

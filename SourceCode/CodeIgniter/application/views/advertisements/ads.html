@@ -1,72 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
-    <title>Advertisements</title>
-
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Cancellation Page</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../../../assets/css/taro/ads.css">
     <script src="../../controllers/adsJs.js"></script>
-
 </head>
 <body>
 
-    <div style="background-color: whitesmoke">
-        <form class="form-horizontal">
-            <fieldset>
+<form class="form-horizontal">
+    <!-- Form Name -->
+    <legend>Ads</legend>
 
-                <!-- Form Name -->
-                <legend>Advertisements</legend>
-
-                <!-- Textarea -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="textarea">Text Area</label>
-                    <div class="col-md-4">
-                        <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
-                    </div>
-                </div>
-
-                <!-- Button -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="singlebutton"></label>
-                    <div class="col-md-4">
-                        <button id="singlebutton" name="singlebutton" class="btn btn-primary" onclick="showPromtBox()">Apply</button>
-                    </div>
-                </div>
-
-            </fieldset>
-        </form>
-    </div>
-    <!--Pop up Box for any implementations-->
-
-    <div id="dialog" title="Apply For Job" style="background-color: lightgrey;display:none">
+    <table>
         <tr class="spaceUnder">
             <!-- Select Basic -->
-            <div class="form-group" style="padding-top: 30px;padding-bottom: 20px;padding-left: 20px">
+            <div class="form-group">
                 <td>
-                    <span class="sadFace" style="float:left"><img src=""> </span>
-                    <label class="col-md-4 control-label" for="reasonPrompt" style="padding-top: 30px;padding-bottom: 20px;padding-left: 20px">Name: </label>
+                    <label class="col-md-4 control-label" >Senior / Lead Frontend Web Developer with Angular JS (PHP)</label>
+                </td>
+                <!--<td>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<input id="memberId" name="memberId" placeholder="Member Id or Username" class="form-control input-md" required="" type="text">-->
+
+                    <!--</div>-->
+                <!--</td>-->
+            </div>
+        </tr>
+
+        <tr class="spaceUnder">
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <td>
+                    <label class="col-md-4 control-label" for="btnViewRecord"></label>
                 </td>
                 <td>
-                    <div class="col-md-4" style="padding-top: 30px;padding-bottom: 10px;padding-left: 20px">
-                        <textarea id="reasonPrompt"  name="reasonPrompt" rows="5" cols="50" placeholder="Some placeholder" class="form-control input-textArea" required="" type="text"></textarea>
-                    </div>
-                </td>
-                <td>
-                    <span class="sadFace" style="float:left"><img src=""> </span>
-                    <label class="col-md-4 control-label" for="reasonPrompt1" style="padding-top: 30px;padding-bottom: 20px;padding-left: 20px">Enter any data: </label>
-                </td>
-                <td>
-                    <div class="col-md-4" style="padding-top: 30px;padding-bottom: 10px;padding-left: 20px">
-                        <textarea id="reasonPrompt1"  name="reasonPrompt1" rows="5" cols="50" placeholder="Second Place holder" class="form-control input-textArea" required="" type="text"></textarea>
+                    <div class="col-md-8">
+                        <button id="btnViewRecord" name="btnViewRecord" class="btn btn-success">View Record</button>
                     </div>
                 </td>
             </div>
         </tr>
-    </div>
+
+        <!--<tr class="spaceUnder">-->
+            <!--&lt;!&ndash; Text input&ndash;&gt;-->
+            <!--<div class="form-group">-->
+                <!--<td>-->
+                    <!--<label class="col-md-4 control-label" for="datepicker">Date of Cancellation</label>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<input type="text" id="datepicker" class="form-control input-md" placeholder="Choose a date">-->
+                <!--</td>-->
+            <!--</div>-->
+        <!--</tr>-->
+
+        <tr class="spaceUnder">
+            <!-- Select Basic -->
+            <div class="form-group">
+                <td>
+                    <label class="col-md-4 control-label" for="reason">Reason for Cancellation</label>
+                </td>
+                <td>
+                    <div class="col-md-4">
+                        <select id="reason" name="reason" class="form-control" onchange="showPromtBox()">
+                            <option value="">Leaving school</option>
+                            <option value="">Leaving town</option>
+                            <option value="">Requested Resources not available</option>
+                            <option value="">Issues not received on time</option>
+                            <option value="">Resources are outdated or in an unusable condition</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+                </td>
+            </div>
+        </tr>
+
+        <tr class="spaceUnder">
+            <!-- Text input-->
+            <div class="form-group">
+                <td>
+                    <label class="col-md-4 control-label" for="cancelMethod">Method of Cancellation</label>
+                </td>
+                <td>
+                    <div class="col-md-4">
+                        <select id="cancelMethod" name="cancelMethod" class="form-control">
+                            <option value="">In person</option>
+                            <option value="">Via phone call</option>
+                            <option value="">Via email</option>
+                        </select>
+                    </div>
+                </td>
+            </div>
+        </tr>
+
+        <tr class="spaceUnder">
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <td>
+                    <label class="col-md-4 control-label" for="btnSubmitCancellation"></label>
+                </td>
+                <td>
+                    <div class="col-md-8">
+                        <button id="btnSubmitCancellation" type="button" name="btnSubmitCancellation" class="btn btn-success">Cancel Membership</button>
+                        <button id="btnresetCancellation" type="reset" name="btnresetCancellation" class="btn btn-success">Reset</button>
+                    </div>
+                </td>
+            </div>
+        </tr>
+    </table>
+</form>
+
+<!--Reason for Cancellation Dialog Pop up Box-->
+
+<div id="dialog" title="Membership Cancellation" style="background-color: lightgrey;display:none">
+    <tr class="spaceUnder">
+        <!-- Select Basic -->
+        <div class="form-group" style="padding-top: 30px;padding-bottom: 20px;padding-left: 20px">
+            <td>
+                <span class="sadFace" style="float:left"><img src="../../../images/sadface.png"> </span>
+                <label class="col-md-4 control-label" for="reasonPrompt" style="padding-top: 30px;padding-bottom: 20px;padding-left: 20px">Enter a Reason for Cancelling this Membership</label>
+            </td>
+            <td>
+                <div class="col-md-4" style="padding-top: 30px;padding-bottom: 10px;padding-left: 20px">
+                    <textarea id="reasonPrompt"  name="reasonPrompt" rows="5" cols="50" placeholder="Reason for Cancellation" class="form-control input-textArea" required="" type="text"></textarea>
+                </div>
+            </td>
+        </div>
+    </tr>
+</div>
 </body>
 </html>

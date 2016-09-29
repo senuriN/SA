@@ -1,0 +1,86 @@
+.form-horizontal{
+}
+legend{
+    color: darkblue;
+    font-family: 'Rouge Script',
+    cursive; font-size: 30px;
+    font-weight: normal;
+    line-height: 48px;
+    padding-left: 20px;
+    margin: 0 0 28px;
+    text-align: center;
+    text-shadow: 1px 1px 2px whitesmoke;
+}
+
+.form-group{
+    width: inherit;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+tr.spaceUnder > td{
+    padding-bottom: 1.3em;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.input-md, #designation , #reason , #cancelMethod{
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #DDD inset;
+    color: #666;
+    outline: none;
+    height:30px;
+    width: 320px;
+    font-size: large;
+}
+.input-textArea{
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #DDD inset;
+    color: #666;
+    outline: none;
+    font-size: large;
+}
+
+#selectbasic{
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #DDD inset;
+    color: #666;
+    outline: none;
+    height:30px;
+    width: 80px;
+    font-size: large;
+}
+
+.btn-success, .btn-inverse , #btnViewRecord{
+    -moz-box-shadow: 3px 4px 0px 0px #317187;
+    -webkit-box-shadow: 3px 4px 0px 0px #317187;
+    box-shadow: 3px 4px 0px 0px #317187;
+    background-color:#ededed;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    border:1px solid #99abc9;
+    margin-right: 2em;
+    display:inline-block;
+    cursor:pointer;
+    color:#010303;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+}
+.btn-success:hover , .btn-inverse:hover , #btnViewRecord:hover{
+    background-color: lightsteelblue;
+}
+.btn-success:hover , .btn-inverse:active , #btnViewRecord:active{
+    position:relative;
+    top:1px;
+}
